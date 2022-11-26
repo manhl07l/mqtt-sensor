@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 40px;
+    color: black;
+    background-color: white;
+    text-rendering: optimizeLegibility;
+}
+.logo{
+    margin: 10px 10px;
+}
+.taskbar{
+    float:right;
+    list-style: none;
+    margin: 10px 20px;
+}
+.taskbar li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.taskbar li a{
+    text-decoration: none;
+    color: black;
+}
+.navtask{
+    background-color: #85a4f0;
+}
+#main{
+    width: 100%;
+    background-color:gray;
+}
+.col{
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px ;
+    border: 2px solid white;
+}
+.data_sensor img{
+    margin: 10px;
+    width: 64px;
+    height: 64px;
+}
+#ndisplay .col{
+    margin-top: 10px;
+    height: 550px;
+}
+.row{
+    margin-left: 40px;
+}
+.anh{
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+.but{
+  font-size: 20px;
+  width: 80px;
+  height: auto;
+  border: 2px solid#84ceeb;
+  background-color: gray;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+  }
+  /*xoa check box*/
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /*nen nut nhan*/
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  /* nut nhan*/
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 34px;
+    width: 34px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  /*di chuyen nut*/
+  input:checked + .slider:before {
+    transform: translateX(48px);
+  }
+  
+  /* vien nut */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

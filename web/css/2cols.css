@@ -1,0 +1,44 @@
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+}
+
+.col:first-child { margin-left: 30px; } /* all browsers except IE6 and lower */
+
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.chart {
+	width: 61.3%; 
+}
+
+.control {
+	width: 30%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.chart {
+		width: 100%; 
+	}
+	.control {
+		width: 100%; 
+	}
+}

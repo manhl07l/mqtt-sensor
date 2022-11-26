@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>IOT control</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/3cols.css">
+        <link rel="stylesheet" href="./css/2cols.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <header>
+            <nav class="navtask">
+                <a href="#"><img class="logo" src="./user-interface-237/png-32/home-32x32-1604566.png" alt="logo"></a>
+                <ul class="taskbar">
+                    <li><a href="#"><img src="./user-interface-237/png-32/search-32x32-1604561.png" alt=""></a></li>
+                    <li><a href="#"><img src="./user-interface-237/png-32/notification-32x32-1604562.png" alt=""></a></li>
+                    <li><a href="#"><img src="./user-interface-237/png-32/user-32x32-1604557.png" alt=""></a></li>
+                </ul>
+            </nav>
+            <div id="main"> 
+                <div id="display" class="row">
+                    <div id="temp" class="col temp">
+                        <div class="data_sensor"><img src="./user-interface-237/temperature.png" alt=""></div>
+                        <p id="hienthi1"></p>
+                    </div>
+                    <div id="hum" class="col hum">
+                        <div class="data_sensor"><img src="./user-interface-237/humidity.png" alt=""></div>
+                        <p id="hienthi2"></p>
+                    </div>
+                    <div id="light" class="col light">
+                        <div class="data_sensor"><img src="./user-interface-237/sun.png" alt=""></div>
+                        <p id="hienthi3"></p>
+                    </div>
+                </div>
+                <div id="ndisplay" class="row">
+                    <div class="col chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div id="control" class="col control">
+                        <div class="buts1">
+                            <div class="img"><img id="anh1" class="anh" src="electric-bulb (1).png"></div>
+                            <button id="but1" class="but" >on</button>
+                            <button id="but2" class="but" >off</button>
+                        </div>
+                        <div class="buts2">
+                            <div class="img"><img id="anh2" class="anh" src="./electric-bulb (1).png"></div>
+                            <label class="switch" >
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.min.js"></script>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
